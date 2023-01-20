@@ -1,0 +1,16 @@
+[package]
+name = "nwgtray"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[build-dependencies]
+winres = "0.1.12"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+native-windows-gui = "1.0.13"
+native-windows-derive = "1.0.5"
+winapi = { version= "*", features = ["winuser", "mmdeviceapi", "combaseapi", "commapi", "guiddef", "objbase", "unknwnbase", "propsys", "propidl", "endpointvolume", "ntdef", "stralign", "coml2api", "functiondiscoverykeys_devpkey", "devpkey", "impl-default", "windef", "winnt", "securitybaseapi", "tlhelp32", "handleapi", "synchapi"]}
+once_cell = "*"
